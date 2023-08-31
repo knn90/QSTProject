@@ -11,9 +11,6 @@
 		6AA8DE5D2AA0677600C147C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE5C2AA0677600C147C2 /* ContentView.swift */; };
 		6AA8DE5F2AA0677700C147C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA8DE5E2AA0677700C147C2 /* Assets.xcassets */; };
 		6AA8DE622AA0677700C147C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA8DE612AA0677700C147C2 /* Preview Assets.xcassets */; };
-		6AA8DE6C2AA0677700C147C2 /* QSTProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE6B2AA0677700C147C2 /* QSTProjectTests.swift */; };
-		6AA8DE762AA0677700C147C2 /* QSTProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE752AA0677700C147C2 /* QSTProjectUITests.swift */; };
-		6AA8DE782AA0677700C147C2 /* QSTProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE772AA0677700C147C2 /* QSTProjectUITestsLaunchTests.swift */; };
 		6AA8DE862AA067DB00C147C2 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE852AA067DB00C147C2 /* MovieListView.swift */; };
 		6AA8DE882AA0681000C147C2 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE872AA0681000C147C2 /* MovieListViewModel.swift */; };
 		6AA8DE8A2AA06AA800C147C2 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE892AA06AA800C147C2 /* MovieCell.swift */; };
@@ -30,13 +27,6 @@
 			remoteGlobalIDString = 6AA8DE562AA0677600C147C2;
 			remoteInfo = QSTProject;
 		};
-		6AA8DE722AA0677700C147C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6AA8DE4F2AA0677600C147C2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6AA8DE562AA0677600C147C2;
-			remoteInfo = QSTProject;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -46,10 +36,6 @@
 		6AA8DE5E2AA0677700C147C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AA8DE612AA0677700C147C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6AA8DE672AA0677700C147C2 /* QSTProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSTProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AA8DE6B2AA0677700C147C2 /* QSTProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSTProjectTests.swift; sourceTree = "<group>"; };
-		6AA8DE712AA0677700C147C2 /* QSTProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSTProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AA8DE752AA0677700C147C2 /* QSTProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSTProjectUITests.swift; sourceTree = "<group>"; };
-		6AA8DE772AA0677700C147C2 /* QSTProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSTProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6AA8DE852AA067DB00C147C2 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		6AA8DE872AA0681000C147C2 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		6AA8DE892AA06AA800C147C2 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
@@ -73,13 +59,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6AA8DE6E2AA0677700C147C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,7 +67,6 @@
 			children = (
 				6AA8DE592AA0677600C147C2 /* QSTProject */,
 				6AA8DE6A2AA0677700C147C2 /* QSTProjectTests */,
-				6AA8DE742AA0677700C147C2 /* QSTProjectUITests */,
 				6AA8DE582AA0677600C147C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,7 +76,6 @@
 			children = (
 				6AA8DE572AA0677600C147C2 /* QSTProject.app */,
 				6AA8DE672AA0677700C147C2 /* QSTProjectTests.xctest */,
-				6AA8DE712AA0677700C147C2 /* QSTProjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,18 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				6AA8DE912AA076A700C147C2 /* MovieList */,
-				6AA8DE6B2AA0677700C147C2 /* QSTProjectTests.swift */,
 			);
 			path = QSTProjectTests;
-			sourceTree = "<group>";
-		};
-		6AA8DE742AA0677700C147C2 /* QSTProjectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6AA8DE752AA0677700C147C2 /* QSTProjectUITests.swift */,
-				6AA8DE772AA0677700C147C2 /* QSTProjectUITestsLaunchTests.swift */,
-			);
-			path = QSTProjectUITests;
 			sourceTree = "<group>";
 		};
 		6AA8DE842AA067CB00C147C2 /* MovieList */ = {
@@ -215,24 +182,6 @@
 			productReference = 6AA8DE672AA0677700C147C2 /* QSTProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6AA8DE702AA0677700C147C2 /* QSTProjectUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6AA8DE812AA0677700C147C2 /* Build configuration list for PBXNativeTarget "QSTProjectUITests" */;
-			buildPhases = (
-				6AA8DE6D2AA0677700C147C2 /* Sources */,
-				6AA8DE6E2AA0677700C147C2 /* Frameworks */,
-				6AA8DE6F2AA0677700C147C2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6AA8DE732AA0677700C147C2 /* PBXTargetDependency */,
-			);
-			name = QSTProjectUITests;
-			productName = QSTProjectUITests;
-			productReference = 6AA8DE712AA0677700C147C2 /* QSTProjectUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -247,10 +196,6 @@
 						CreatedOnToolsVersion = 14.3.1;
 					};
 					6AA8DE662AA0677700C147C2 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 6AA8DE562AA0677600C147C2;
-					};
-					6AA8DE702AA0677700C147C2 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 6AA8DE562AA0677600C147C2;
 					};
@@ -271,7 +216,6 @@
 			targets = (
 				6AA8DE562AA0677600C147C2 /* QSTProject */,
 				6AA8DE662AA0677700C147C2 /* QSTProjectTests */,
-				6AA8DE702AA0677700C147C2 /* QSTProjectUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,13 +232,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6AA8DE652AA0677700C147C2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6AA8DE6F2AA0677700C147C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,17 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AA8DE6C2AA0677700C147C2 /* QSTProjectTests.swift in Sources */,
 				6AA8DE932AA076BB00C147C2 /* MovieListViewModelTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6AA8DE6D2AA0677700C147C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6AA8DE762AA0677700C147C2 /* QSTProjectUITests.swift in Sources */,
-				6AA8DE782AA0677700C147C2 /* QSTProjectUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,11 +269,6 @@
 			isa = PBXTargetDependency;
 			target = 6AA8DE562AA0677600C147C2 /* QSTProject */;
 			targetProxy = 6AA8DE682AA0677700C147C2 /* PBXContainerItemProxy */;
-		};
-		6AA8DE732AA0677700C147C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6AA8DE562AA0677600C147C2 /* QSTProject */;
-			targetProxy = 6AA8DE722AA0677700C147C2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -559,40 +481,6 @@
 			};
 			name = Release;
 		};
-		6AA8DE822AA0677700C147C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vietxcode.QSTProjectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = QSTProject;
-			};
-			name = Debug;
-		};
-		6AA8DE832AA0677700C147C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vietxcode.QSTProjectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = QSTProject;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -619,15 +507,6 @@
 			buildConfigurations = (
 				6AA8DE7F2AA0677700C147C2 /* Debug */,
 				6AA8DE802AA0677700C147C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6AA8DE812AA0677700C147C2 /* Build configuration list for PBXNativeTarget "QSTProjectUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6AA8DE822AA0677700C147C2 /* Debug */,
-				6AA8DE832AA0677700C147C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
