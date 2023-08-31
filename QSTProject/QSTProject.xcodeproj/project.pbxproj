@@ -18,6 +18,7 @@
 		6AA8DE882AA0681000C147C2 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE872AA0681000C147C2 /* MovieListViewModel.swift */; };
 		6AA8DE8A2AA06AA800C147C2 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE892AA06AA800C147C2 /* MovieCell.swift */; };
 		6AA8DE8D2AA06FB000C147C2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE8C2AA06FB000C147C2 /* Movie.swift */; };
+		6AA8DE902AA070C300C147C2 /* movieList.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AA8DE8F2AA070C300C147C2 /* movieList.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		6AA8DE872AA0681000C147C2 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		6AA8DE892AA06AA800C147C2 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		6AA8DE8C2AA06FB000C147C2 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		6AA8DE8F2AA070C300C147C2 /* movieList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movieList.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		6AA8DE592AA0677600C147C2 /* QSTProject */ = {
 			isa = PBXGroup;
 			children = (
+				6AA8DE8E2AA070A700C147C2 /* MovieListJSON */,
 				6AA8DE8B2AA06FA600C147C2 /* Models */,
 				6AA8DE842AA067CB00C147C2 /* MovieList */,
 				6AA8DE5A2AA0677600C147C2 /* QSTProjectApp.swift */,
@@ -153,6 +156,14 @@
 				6AA8DE8C2AA06FB000C147C2 /* Movie.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		6AA8DE8E2AA070A700C147C2 /* MovieListJSON */ = {
+			isa = PBXGroup;
+			children = (
+				6AA8DE8F2AA070C300C147C2 /* movieList.json */,
+			);
+			path = MovieListJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			files = (
 				6AA8DE622AA0677700C147C2 /* Preview Assets.xcassets in Resources */,
 				6AA8DE5F2AA0677700C147C2 /* Assets.xcassets in Resources */,
+				6AA8DE902AA070C300C147C2 /* movieList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
