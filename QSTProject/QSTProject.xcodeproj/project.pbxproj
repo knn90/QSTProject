@@ -14,6 +14,9 @@
 		6AA8DE6C2AA0677700C147C2 /* QSTProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE6B2AA0677700C147C2 /* QSTProjectTests.swift */; };
 		6AA8DE762AA0677700C147C2 /* QSTProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE752AA0677700C147C2 /* QSTProjectUITests.swift */; };
 		6AA8DE782AA0677700C147C2 /* QSTProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE772AA0677700C147C2 /* QSTProjectUITestsLaunchTests.swift */; };
+		6AA8DE862AA067DB00C147C2 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE852AA067DB00C147C2 /* MovieListView.swift */; };
+		6AA8DE882AA0681000C147C2 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE872AA0681000C147C2 /* MovieListViewModel.swift */; };
+		6AA8DE8A2AA06AA800C147C2 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE892AA06AA800C147C2 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		6AA8DE712AA0677700C147C2 /* QSTProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSTProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA8DE752AA0677700C147C2 /* QSTProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSTProjectUITests.swift; sourceTree = "<group>"; };
 		6AA8DE772AA0677700C147C2 /* QSTProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSTProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6AA8DE852AA067DB00C147C2 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		6AA8DE872AA0681000C147C2 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		6AA8DE892AA06AA800C147C2 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		6AA8DE592AA0677600C147C2 /* QSTProject */ = {
 			isa = PBXGroup;
 			children = (
+				6AA8DE842AA067CB00C147C2 /* MovieList */,
 				6AA8DE5A2AA0677600C147C2 /* QSTProjectApp.swift */,
 				6AA8DE5C2AA0677600C147C2 /* ContentView.swift */,
 				6AA8DE5E2AA0677700C147C2 /* Assets.xcassets */,
@@ -125,6 +132,16 @@
 				6AA8DE772AA0677700C147C2 /* QSTProjectUITestsLaunchTests.swift */,
 			);
 			path = QSTProjectUITests;
+			sourceTree = "<group>";
+		};
+		6AA8DE842AA067CB00C147C2 /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				6AA8DE852AA067DB00C147C2 /* MovieListView.swift */,
+				6AA8DE872AA0681000C147C2 /* MovieListViewModel.swift */,
+				6AA8DE892AA06AA800C147C2 /* MovieCell.swift */,
+			);
+			path = MovieList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +276,9 @@
 			files = (
 				6AA8DE5D2AA0677600C147C2 /* ContentView.swift in Sources */,
 				6AA8DE5B2AA0677600C147C2 /* QSTProjectApp.swift in Sources */,
+				6AA8DE862AA067DB00C147C2 /* MovieListView.swift in Sources */,
+				6AA8DE8A2AA06AA800C147C2 /* MovieCell.swift in Sources */,
+				6AA8DE882AA0681000C147C2 /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
