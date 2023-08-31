@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MovieListView: View {
-    @ObservedObject var viewModel: MovieListViewModel
     var body: some View {
         MovieCell()
             .alignmentGuide(.listRowSeparatorLeading) { d in
@@ -18,6 +17,6 @@ struct MovieListView: View {
 
 struct MovieListView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieListView(viewModel: MovieListViewModel())
+        MovieListView()
     }
 }

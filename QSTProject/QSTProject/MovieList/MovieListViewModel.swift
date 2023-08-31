@@ -8,5 +8,18 @@
 import Foundation
 
 final class MovieListViewModel: ObservableObject {
-    @Published var title = "xyz"
+    private let service: MovieListService
+
+    init(service: MovieListService) {
+        self.service = service
+    }
+
+    func getMovieList() {
+        service.getMovieList()
+    }
+}
+
+
+protocol MovieListService {
+    func getMovieList()
 }
