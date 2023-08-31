@@ -19,6 +19,7 @@
 		6AA8DE8A2AA06AA800C147C2 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE892AA06AA800C147C2 /* MovieCell.swift */; };
 		6AA8DE8D2AA06FB000C147C2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE8C2AA06FB000C147C2 /* Movie.swift */; };
 		6AA8DE902AA070C300C147C2 /* movieList.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AA8DE8F2AA070C300C147C2 /* movieList.json */; };
+		6AA8DE932AA076BB00C147C2 /* MovieListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE922AA076BB00C147C2 /* MovieListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		6AA8DE892AA06AA800C147C2 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		6AA8DE8C2AA06FB000C147C2 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		6AA8DE8F2AA070C300C147C2 /* movieList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movieList.json; sourceTree = "<group>"; };
+		6AA8DE922AA076BB00C147C2 /* MovieListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		6AA8DE6A2AA0677700C147C2 /* QSTProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				6AA8DE912AA076A700C147C2 /* MovieList */,
 				6AA8DE6B2AA0677700C147C2 /* QSTProjectTests.swift */,
 			);
 			path = QSTProjectTests;
@@ -164,6 +167,14 @@
 				6AA8DE8F2AA070C300C147C2 /* movieList.json */,
 			);
 			path = MovieListJSON;
+			sourceTree = "<group>";
+		};
+		6AA8DE912AA076A700C147C2 /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				6AA8DE922AA076BB00C147C2 /* MovieListViewModelTests.swift */,
+			);
+			path = MovieList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AA8DE6C2AA0677700C147C2 /* QSTProjectTests.swift in Sources */,
+				6AA8DE932AA076BB00C147C2 /* MovieListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
