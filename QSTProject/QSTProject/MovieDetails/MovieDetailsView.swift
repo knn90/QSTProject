@@ -15,40 +15,18 @@ struct MovieDetailsView: View {
     }
 
     var body: some View {
-        VStack {
-            PosterView(
+        VStack(spacing: 20) {
+            PosterSectionView(
                 poster: movie.poster,
                 title: movie.title,
                 rating: movie.rating,
                 onWatchList: movie.onWatchList
             )
             Divider()
-            VStack(alignment: .leading, spacing: 8) {
-                Text("Short description")
-                    .bold()
-                Text(movie.description)
-                    .foregroundColor(.secondary)
-            }
+            DescriptionSectionView(description: movie.description)
 
             Divider()
-            VStack(alignment: .leading, spacing: 8) {
-                Text("Details")
-                    .bold()
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                HStack(alignment: .top, spacing: 8) {
-                    Text("Genre")
-                        .frame(width: 120, alignment: .trailing)
-                    Text(movie.genre)
-                    Spacer()
-                }
-                .background(Color.red)
-                HStack {
-                    Text("Released date")
-                        .bold()
-                        .frame(width: 120, alignment: .trailing)
-                    Text(movie.releasedDateString())
-                }
-            }
+            DetailsSectionView(genre: movie.genre, releaseDate: movie.releasedDateString())
 
         }
         .padding()

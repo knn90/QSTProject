@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PosterView: View {
+struct PosterSectionView: View {
     private let poster: String
     private let title: String
     private let rating: CGFloat
@@ -39,7 +39,7 @@ struct PosterView: View {
                 addWatchListButton()
                 watchTrailerButton()
             }
-            .padding()
+            .padding(EdgeInsets(top: 4, leading: 8, bottom: 4, trailing: 8))
         }
     }
 
@@ -90,7 +90,7 @@ struct PosterView: View {
 
 struct PosterView_Previews: PreviewProvider {
     static var previews: some View {
-        PosterView(
+        PosterSectionView(
             poster: "Spider Man",
             title: "Spider",
             rating: 8.0,
