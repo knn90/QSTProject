@@ -21,28 +21,27 @@ struct PosterView: View {
     }
 
     var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             Image(poster)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 80)
+                .frame(width: 100)
                 .cornerRadius(4)
                 .shadow(radius: 8, y: 4)
 
-            VStack(alignment: .leading, spacing: 2) {
-                HStack {
+            VStack(alignment: .leading, spacing: 10) {
+                HStack(alignment: .top) {
                     Text(title)
                         .font(.headline.bold())
-                    let formattedFloat = String(format: "%.1f", rating)
-                    Text("\(formattedFloat)")
-                    Text("/10")
+                    Spacer(minLength: 2)
+                    ratingView()
                 }
 
                 Button() {
                 } label: {
                     Text("+ ADD TO WATCHLIST")
                         .font(.caption)
-                        .padding(8)
+                        .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
                         .overlay {
                             RoundedRectangle(cornerRadius: 16)
                                 .foregroundColor(Color.gray.opacity(0.3))
@@ -56,7 +55,7 @@ struct PosterView: View {
                     Text("WATCH TRAILER")
                         .font(.caption)
                         .foregroundColor(Color.primary)
-                        .padding(8)
+                        .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
                         .overlay {
                             RoundedRectangle(cornerRadius: 16)
                                 .stroke(Color.primary, lineWidth: 1)
@@ -66,6 +65,18 @@ struct PosterView: View {
                 }
             }
             .padding()
+        }
+    }
+
+    @ViewBuilder
+    private func ratingView() -> some View {
+        HStack(alignment: .firstTextBaseline, spacing: 0) {
+            let formattedFloat = String(format: "%.1f", rating)
+            Text("\(formattedFloat)")
+                .font(.body.bold())
+            Text("/10")
+                .font(.caption)
+                .foregroundColor(.secondary)
         }
     }
 }
