@@ -8,7 +8,8 @@
             "genre": "Action, Sci-Fi",
             "released_date": "3 September 2020",
             "trailer_link": "https://www.youtube.com/watch?v=LdOM0x0XDMo",
-            "poster": "Tenet"
+            "poster": "Tenet",
+            "on_watchlist": true
         },
         {
             "title": "Spider-Man: Into the Spider-Verse",
@@ -18,7 +19,8 @@
             "genre": "Action, Animation, Adventure",
             "released_date": "14 December 2018",
             "trailer_link": "https://www.youtube.com/watch?v=tg52up16eq0",
-            "poster": "Spider Man"
+            "poster": "Spider Man",
+            "on_watchlist": false
         }
     ]
 }

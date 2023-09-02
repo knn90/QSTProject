@@ -29,10 +29,11 @@ struct MovieCell: View {
                 Text("\(movie.duration) - \(movie.genre)")
                     .font(.caption)
                     .foregroundColor(.secondary)
-
-                Text("ON MY WATCH LIST")
-                    .font(.system(size: 9).bold())
-                    .padding(EdgeInsets(top: 16, leading: 0, bottom: 8, trailing: 0))
+                if movie.onWatchList {
+                    Text("ON MY WATCH LIST")
+                        .font(.system(size: 9).bold())
+                        .padding(EdgeInsets(top: 16, leading: 0, bottom: 8, trailing: 0))
+                }
             }
             .padding()
         }
@@ -41,15 +42,30 @@ struct MovieCell: View {
 
 struct MovieCell_Previews: PreviewProvider {
     static var previews: some View {
-        MovieCell(movie: Movie(
-            title: "Title",
-            rating: 5.0,
-            duration: "duration",
-            genre: "genre",
-            releasedDate: Date(),
-            description: "Description",
-            trailer: URL(string: "https://url.com")!,
-            poster: "Tenet")
-        )
+        VStack {
+            MovieCell(movie: Movie(
+                title: "Title",
+                rating: 5.0,
+                duration: "duration",
+                genre: "genre",
+                releasedDate: Date(),
+                description: "Description",
+                trailer: URL(string: "https://url.com")!,
+                poster: "Tenet",
+                onWatchList: true)
+            )
+            
+            MovieCell(movie: Movie(
+                title: "Title",
+                rating: 5.0,
+                duration: "duration",
+                genre: "genre",
+                releasedDate: Date(),
+                description: "Description",
+                trailer: URL(string: "https://url.com")!,
+                poster: "Tenet",
+                onWatchList: false)
+            )
+        }
     }
 }

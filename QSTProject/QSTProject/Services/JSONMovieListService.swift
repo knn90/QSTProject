@@ -24,6 +24,7 @@ private struct MovieResponse: Decodable {
     let description: String
     let trailer: URL
     let poster: String
+    let onWatchList: Bool
 
     enum CodingKeys: String, CodingKey {
         case title
@@ -34,6 +35,7 @@ private struct MovieResponse: Decodable {
         case description
         case trailer = "trailer_link"
         case poster
+        case onWatchList = "on_watchlist"
     }
 
     func toModel() -> Movie {
@@ -45,7 +47,8 @@ private struct MovieResponse: Decodable {
             releasedDate: releasedDate,
             description: description,
             trailer: trailer,
-            poster: poster
+            poster: poster,
+            onWatchList: onWatchList
         )
     }
 }
