@@ -21,4 +21,11 @@ struct Movie: Identifiable {
     var id: String {
         title
     }
+
+    func releasedDateString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.dateFormat = "yyyy, d MMMM"
+        return dateFormatter.string(from: releasedDate)
+    }
 }
