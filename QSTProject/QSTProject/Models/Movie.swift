@@ -15,7 +15,8 @@ struct Movie: Identifiable {
     let releasedDate: Date
     let description: String
     let trailer: URL
-
+    let poster: String
+    
     var id: String {
         title
     }

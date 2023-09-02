@@ -7,7 +7,8 @@
             "duration": "2h 30 min",
             "genre": "Action, Sci-Fi",
             "released_date": "3 September 2020",
-            "trailer_link": "https://www.youtube.com/watch?v=LdOM0x0XDMo"
+            "trailer_link": "https://www.youtube.com/watch?v=LdOM0x0XDMo",
+            "poster": "Tenet"
         },
         {
             "title": "Spider-Man: Into the Spider-Verse",
@@ -16,7 +17,8 @@
             "duration": "1h 57min",
             "genre": "Action, Animation, Adventure",
             "released_date": "14 December 2018",
-            "trailer_link": "https://www.youtube.com/watch?v=tg52up16eq0"
+            "trailer_link": "https://www.youtube.com/watch?v=tg52up16eq0",
+            "poster": "Spider Man"
         }
     ]
 }

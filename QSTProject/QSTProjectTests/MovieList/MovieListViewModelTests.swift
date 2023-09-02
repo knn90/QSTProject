@@ -33,8 +33,9 @@ final class MovieListViewModelTests: XCTestCase {
 final class MovieListServiceSpy: MovieListService {
     private(set) var requestCallCount = 0
 
-    func getMovieList() {
+    func getMovieList() -> [Movie] {
         requestCallCount += 1
+        return []
     }
 }
 

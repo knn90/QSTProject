@@ -11,7 +11,11 @@ import SwiftUI
 struct QSTProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                MovieListView(viewModel: MovieListViewModel(service: JSONMovieListService()))
+            }
+
+
         }
     }
 }

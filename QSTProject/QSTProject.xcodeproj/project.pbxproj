@@ -17,6 +17,8 @@
 		6AA8DE8D2AA06FB000C147C2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE8C2AA06FB000C147C2 /* Movie.swift */; };
 		6AA8DE902AA070C300C147C2 /* movieList.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AA8DE8F2AA070C300C147C2 /* movieList.json */; };
 		6AA8DE932AA076BB00C147C2 /* MovieListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE922AA076BB00C147C2 /* MovieListViewModelTests.swift */; };
+		6AA8DE962AA07CDF00C147C2 /* MovieListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE952AA07CDF00C147C2 /* MovieListService.swift */; };
+		6AA8DE982AA07CF900C147C2 /* JSONMovieListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DE972AA07CF900C147C2 /* JSONMovieListService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		6AA8DE8C2AA06FB000C147C2 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		6AA8DE8F2AA070C300C147C2 /* movieList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movieList.json; sourceTree = "<group>"; };
 		6AA8DE922AA076BB00C147C2 /* MovieListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModelTests.swift; sourceTree = "<group>"; };
+		6AA8DE952AA07CDF00C147C2 /* MovieListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListService.swift; sourceTree = "<group>"; };
+		6AA8DE972AA07CF900C147C2 /* JSONMovieListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMovieListService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		6AA8DE592AA0677600C147C2 /* QSTProject */ = {
 			isa = PBXGroup;
 			children = (
+				6AA8DE942AA07CCF00C147C2 /* Services */,
 				6AA8DE8E2AA070A700C147C2 /* MovieListJSON */,
 				6AA8DE8B2AA06FA600C147C2 /* Models */,
 				6AA8DE842AA067CB00C147C2 /* MovieList */,
@@ -142,6 +147,15 @@
 				6AA8DE922AA076BB00C147C2 /* MovieListViewModelTests.swift */,
 			);
 			path = MovieList;
+			sourceTree = "<group>";
+		};
+		6AA8DE942AA07CCF00C147C2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6AA8DE952AA07CDF00C147C2 /* MovieListService.swift */,
+				6AA8DE972AA07CF900C147C2 /* JSONMovieListService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +263,9 @@
 				6AA8DE5B2AA0677600C147C2 /* QSTProjectApp.swift in Sources */,
 				6AA8DE8D2AA06FB000C147C2 /* Movie.swift in Sources */,
 				6AA8DE862AA067DB00C147C2 /* MovieListView.swift in Sources */,
+				6AA8DE982AA07CF900C147C2 /* JSONMovieListService.swift in Sources */,
 				6AA8DE8A2AA06AA800C147C2 /* MovieCell.swift in Sources */,
+				6AA8DE962AA07CDF00C147C2 /* MovieListService.swift in Sources */,
 				6AA8DE882AA0681000C147C2 /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
