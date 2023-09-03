@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct MovieListView: View {
-    @ObservedObject var viewModel: MovieListViewModel
+    @StateObject var viewModel: MovieListViewModel
     @State private var showingSortOption = false
 
     var body: some View {
-        List(viewModel.movies) { movie in
+        List($viewModel.movies) { movie in
             NavigationLink {
                 MovieDetailsView(movie: movie)
             } label: {
@@ -26,7 +26,7 @@ struct MovieListView: View {
         .navigationBarItems(trailing: Button("Sort") {
             showingSortOption.toggle()
         })
-        .onAppear {
+        .onViewDidLoad {
             viewModel.getMovieList()
         }
         .confirmationDialog("Sort by", isPresented: $showingSortOption) {

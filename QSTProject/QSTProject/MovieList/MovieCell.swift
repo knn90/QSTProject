@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct MovieCell: View {
-    @State private var movie: Movie
+    @Binding private var movie: Movie
 
-    init(movie: Movie) {
-        _movie = State(initialValue: movie)
+    init(movie: Binding<Movie>) {
+        _movie = movie
     }
 
     var body: some View {
@@ -43,7 +43,7 @@ struct MovieCell: View {
 struct MovieCell_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            MovieCell(movie: Movie(
+            MovieCell(movie: .constant(Movie(
                 title: "Title",
                 rating: 5.0,
                 duration: "duration",
@@ -53,9 +53,9 @@ struct MovieCell_Previews: PreviewProvider {
                 trailer: URL(string: "https://url.com")!,
                 poster: "Tenet",
                 onWatchList: true)
-            )
+            ))
             
-            MovieCell(movie: Movie(
+            MovieCell(movie: .constant(Movie(
                 title: "Title",
                 rating: 5.0,
                 duration: "duration",
@@ -65,7 +65,7 @@ struct MovieCell_Previews: PreviewProvider {
                 trailer: URL(string: "https://url.com")!,
                 poster: "Tenet",
                 onWatchList: false)
-            )
+            ))
         }
     }
 }

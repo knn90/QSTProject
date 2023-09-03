@@ -11,13 +11,13 @@ struct PosterSectionView: View {
     private let poster: String
     private let title: String
     private let rating: CGFloat
-    private let onWatchList: Bool
+    @Binding var onWatchList: Bool
 
-    init(poster: String, title: String, rating: CGFloat, onWatchList: Bool) {
+    init(poster: String, title: String, rating: CGFloat, onWatchList: Binding<Bool>) {
         self.poster = poster
         self.title = title
         self.rating = rating
-        self.onWatchList = onWatchList
+        _onWatchList = onWatchList
     }
 
     var body: some View {
@@ -36,7 +36,12 @@ struct PosterSectionView: View {
                     Spacer(minLength: 2)
                     ratingView()
                 }
-                addWatchListButton()
+                if $onWatchList.wrappedValue {
+                    removeFromWatchListButton()
+                } else {
+                    addToWatchListButton()
+                }
+
                 watchTrailerButton()
             }
             .padding(EdgeInsets(top: 4, leading: 8, bottom: 4, trailing: 8))
@@ -55,10 +60,28 @@ struct PosterSectionView: View {
     }
 
     @ViewBuilder
-    private func addWatchListButton() -> some View {
+    private func addToWatchListButton() -> some View {
         Button() {
+            onWatchList = true
         } label: {
             Text("+ ADD TO WATCHLIST")
+                .font(.caption)
+                .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
+                .overlay {
+                    RoundedRectangle(cornerRadius: 16)
+                        .foregroundColor(Color.gray.opacity(0.3))
+                }
+                .foregroundColor(Color.secondary)
+
+        }
+    }
+
+    @ViewBuilder
+    private func removeFromWatchListButton() -> some View {
+        Button() {
+            onWatchList = false
+        } label: {
+            Text("REMOVE FROM WATCHLIST")
                 .font(.caption)
                 .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
                 .overlay {
@@ -94,6 +117,6 @@ struct PosterView_Previews: PreviewProvider {
             poster: "Spider Man",
             title: "Spider",
             rating: 8.0,
-            onWatchList: true)
+            onWatchList: .constant(true))
     }
 }

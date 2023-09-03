@@ -16,7 +16,7 @@ struct Movie: Identifiable {
     let description: String
     let trailer: URL
     let poster: String
-    let onWatchList: Bool
+    var onWatchList: Bool
     
     var id: String {
         title
