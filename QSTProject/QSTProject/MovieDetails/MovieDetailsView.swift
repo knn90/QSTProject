@@ -21,6 +21,7 @@ struct MovieDetailsView: View {
                     poster: movie.poster,
                     title: movie.title,
                     rating: movie.rating,
+                    trailer: movie.trailer,
                     onWatchList: $movie.onWatchList
                 )
                 Divider()

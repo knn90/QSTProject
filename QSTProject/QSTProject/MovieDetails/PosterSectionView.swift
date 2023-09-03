@@ -11,12 +11,15 @@ struct PosterSectionView: View {
     private let poster: String
     private let title: String
     private let rating: CGFloat
+    private let trailer: URL
     @Binding var onWatchList: Bool
+    @Environment(\.openURL) private var openURL
 
-    init(poster: String, title: String, rating: CGFloat, onWatchList: Binding<Bool>) {
+    init(poster: String, title: String, rating: CGFloat, trailer: URL, onWatchList: Binding<Bool>) {
         self.poster = poster
         self.title = title
         self.rating = rating
+        self.trailer = trailer
         _onWatchList = onWatchList
     }
 
@@ -42,7 +45,7 @@ struct PosterSectionView: View {
                     addToWatchListButton()
                 }
 
-                watchTrailerButton()
+                watchTrailerButton(trailer)
             }
             .padding(EdgeInsets(top: 4, leading: 8, bottom: 4, trailing: 8))
         }
@@ -94,8 +97,9 @@ struct PosterSectionView: View {
     }
 
     @ViewBuilder
-    private func watchTrailerButton() -> some View {
+    private func watchTrailerButton(_ url: URL) -> some View {
         Button {
+            openURL(url)
         } label: {
             Text("WATCH TRAILER")
                 .font(.caption)
@@ -117,6 +121,7 @@ struct PosterView_Previews: PreviewProvider {
             poster: "Spider Man",
             title: "Spider",
             rating: 8.0,
+            trailer: URL(string: "http://url.com")!,
             onWatchList: .constant(true))
     }
 }
