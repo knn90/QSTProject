@@ -13,10 +13,15 @@ struct MovieListView: View {
 
     var body: some View {
         List(viewModel.movies) { movie in
-            MovieCell(movie: movie)
-                .alignmentGuide(.listRowSeparatorLeading) { d in
-                    -20 }
+            NavigationLink {
+                MovieDetailsView(movie: movie)
+            } label: {
+                MovieCell(movie: movie)
+                    .alignmentGuide(.listRowSeparatorLeading) { _ in
+                            -20 }
+            }
         }
+
         .navigationTitle("Movies")
         .navigationBarItems(trailing: Button("Sort") {
             showingSortOption.toggle()

@@ -15,21 +15,25 @@ struct MovieDetailsView: View {
     }
 
     var body: some View {
-        VStack(spacing: 20) {
-            PosterSectionView(
-                poster: movie.poster,
-                title: movie.title,
-                rating: movie.rating,
-                onWatchList: movie.onWatchList
-            )
-            Divider()
-            DescriptionSectionView(description: movie.description)
+        ScrollView {
+            VStack(spacing: 20) {
+                PosterSectionView(
+                    poster: movie.poster,
+                    title: movie.title,
+                    rating: movie.rating,
+                    onWatchList: movie.onWatchList
+                )
+                Divider()
+                DescriptionSectionView(description: movie.description)
 
-            Divider()
-            DetailsSectionView(genre: movie.genre, releaseDate: movie.releasedDateString())
+                Divider()
+                DetailsSectionView(genre: movie.genre, releaseDate: movie.releasedDateString())
 
+            }
+            .padding()
         }
-        .padding()
+        .navigationBarTitle(movie.title, displayMode: .inline)
+
     }
 }
 
