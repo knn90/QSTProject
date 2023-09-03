@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Movie: Identifiable {
+struct Movie: Identifiable, Equatable {
     let title: String
     let rating: CGFloat
     let duration: String
