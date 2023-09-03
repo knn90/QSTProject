@@ -1,2 +1,2 @@
 # QSTProject
-Demo to load movie list from json file and display on the screen
+Load movie list from json file and display on the screen
